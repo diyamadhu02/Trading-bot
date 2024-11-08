@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Bot</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Trading Bot</h1>
+        <div class="flex-container"> 
+            <form id="stockForm" class="form">
+                <label for="symbol">Stock Symbol:</label>
+                <input type="text" id="symbol" name="symbol" required>
+                <label for="start">Start Date:</label>
+                <input type="date" id="start" name="start_date" required>
+                <label for="end">End Date:</label>
+                <input type="date" id="end" name="end_date" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="sentiment-section"> 
+                <button id="startSentiment">Start Bot Sentiment Analysis</button>
+                <div id="sentimentResult" class="signal-box">
+                    <h2>Sentiment Analysis Result</h2>
+                    <div id="scoreDisplay"></div>
+                <div id="sentimentDisplay"></div>
+                <div id="actionDisplay"></div>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="stockChart"></canvas>
+        
+        <div id="loading" style="display: none;">Loading...</div> <!-- Loading indicator -->
+    </div>
+
+    <script type="module" src="script1.js"></script>
+</body>
+</html>

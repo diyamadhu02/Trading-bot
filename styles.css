@@ -1,0 +1,126 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+}
+
+.container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #2a2a2a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #ddd;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 80%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+canvas {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.chartjs-legend {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* Flex container for form and sentiment section */
+.flex-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between components */
+    align-items: flex-start; /* Align items at the start */
+    margin-bottom: 30px; /* Space below the flex container */
+}
+
+/* Styling for form and sentiment section */
+.form {
+    flex: 1; /* Take equal space */
+    margin-right: 20px; /* Space between form and sentiment section */
+}
+
+.sentiment-section {
+    flex: 1; /* Take equal space */
+    background-color: #2a2a2a; /* Match background */
+    padding: 20px; /* Add some padding */
+    border-radius: 5px; /* Slightly round the corners */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  */
+}
+
+/* Existing styles for sentiment result section */
+.signal-box {
+    display: none; /* Initially hide this */
+}
+
+/* Additional adjustments */
+#sentimentResult {
+    margin-top: 10px; /* Adjust margin for the sentiment result box */
+}
+
+
+#sentimentResultsContainer{
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
